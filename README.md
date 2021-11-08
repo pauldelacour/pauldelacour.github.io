@@ -1,1 +1,0 @@
-# pauldelacour.github.io
