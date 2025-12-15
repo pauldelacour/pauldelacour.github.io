@@ -44,3 +44,4 @@ We introduce the spiked mixture model (SMM) to address the problem of estimating
 
 Our Poster presentation for ASMS 2025 : 
 [Poster](https://pauldelacour.github.io/images/SMM/2025_05_30_asms2025_smm_clustering_delacour.pdf)
+
