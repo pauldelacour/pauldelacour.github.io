@@ -50,11 +50,54 @@
 }
 
 /* remove border*/
-.page__content {
+// .page__content {
 
+//   .archive__item-title {
+//     margin-top: 1em;
+//     border-bottom: none;
+//   }
+// }
+
+// .archive__item-excerpt {
+//   margin-top: 0;
+//   font-size: $type-size-6;
+
+//   & + p {
+//     text-indent: 0;
+//   }
+// }
+
+// .archive__item-teaser {
+//   border-radius: $border-radius;
+//   overflow: hidden;
+//   img {
+//     width: 100%;
+//   }
+// }
+
+// .archive__item:hover {
+//   .archive__item-teaser {
+//     box-shadow: 0 0 10px rgba(#000, 0.25);
+//   }
+
+//   .archive__item-title {
+//     text-decoration: underline;
+//   }
+// }
+.page__content {
   .archive__item-title {
     margin-top: 1em;
     border-bottom: none;
+
+    /* highlight setup */
+    display: inline;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.12),
+      rgba(0, 0, 0, 0.12)
+    );
+    transition: background-size 0.25s ease;
   }
 }
 
@@ -70,18 +113,29 @@
 .archive__item-teaser {
   border-radius: $border-radius;
   overflow: hidden;
+
   img {
     width: 100%;
   }
 }
 
+/* Card hover effect */
+.archive__item {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
 .archive__item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(#000, 0.15);
+
   .archive__item-teaser {
     box-shadow: 0 0 10px rgba(#000, 0.25);
   }
 
   .archive__item-title {
-    text-decoration: underline;
+    /* activate highlight */
+    background-size: 100% 100%;
+    text-decoration: none;
   }
 }
 
@@ -149,6 +203,21 @@
       display: block;
       font-size: $type-size-6;
     }
+  }
+  .archive__item {
+    position: relative;
+  }
+
+  .archive__item-link {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  /* Keep buttons clickable */
+  .archive__item-extras a {
+    position: relative;
+    z-index: 2;
   }
 }
 

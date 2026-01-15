@@ -45,15 +45,14 @@ Publications
 <div class="publications-list">
   {% for post in site.publications reversed %}
     <div class="archive__item">
+      <a class="archive__item-link" href="{{ post.url }}"></a>
       <h2 class="archive__item-title" itemprop="headline">
         <span class="bullet">&#8226;</span> {{ post.title }}
       </h2>
-
       <!-- Optional Metadata -->
       <p class="archive__item-meta">
         {{ post.authors }} — {{ post.venue }}{% if post.year %}, {{ post.year }}{% endif %}
       </p>
-
       <!-- Link Buttons -->
       <p class="archive__item-extras">
         {% if post.arxiv %}
