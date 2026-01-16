@@ -15,12 +15,13 @@ pdf: "/files/papers/smm_paul_delacour.pdf"
 #citation: 'Delacour, Paul. (2025). &quot;Signal Recovery Using a Spiked Mixture Model.&quot; <i>Journal 1</i>. 1(1).'
 ---
 
-We introduce the spiked mixture model (SMM) to address the problem of estimating a set of signals from many randomly scaled and noisy observations. Subsequently, we design a novel expectation-maximization (EM) algorithm to recover all parameters of the SMM. Numerical experiments show that in low signal-to-noise ratio regimes, and for data types where the SMM is relevant, SMM surpasses the more traditional Gaussian mixture model (GMM) in terms of signal recovery performance.
-
-[Download paper here](https://arxiv.org/abs/2501.01840)
+<!-- [Download paper here](https://arxiv.org/abs/2501.01840) -->
 <div class="publications-list">
     <div class="archive__item">
       <!-- Link Buttons -->
+      <h2 class="archive__item-title" itemprop="headline">
+        Download here
+      </h2>
       <p class="archive__item-extras">
         {% if page.arxiv %}
           <a href="{{ post.arxiv }}" class="btn btn--small" target="_blank" rel="noopener noreferrer">
@@ -40,6 +41,8 @@ We introduce the spiked mixture model (SMM) to address the problem of estimating
       </p>
     </div>
 </div>
+
+We introduce the spiked mixture model (SMM) to address the problem of estimating a set of signals from many randomly scaled and noisy observations. Subsequently, we design a novel expectation-maximization (EM) algorithm to recover all parameters of the SMM. Numerical experiments show that in low signal-to-noise ratio regimes, and for data types where the SMM is relevant, SMM surpasses the more traditional Gaussian mixture model (GMM) in terms of signal recovery performance.
 
 
 <video width="640" height="360" autoplay loop muted>
