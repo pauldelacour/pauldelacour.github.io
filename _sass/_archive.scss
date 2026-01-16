@@ -42,48 +42,13 @@
 .archive__item-title {
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
+  text-decoration: none;
 
   a + a {
     opacity: 0.5;
   }
-  text-decoration: none;         /* removes underline */
 }
 
-/* remove border*/
-// .page__content {
-
-//   .archive__item-title {
-//     margin-top: 1em;
-//     border-bottom: none;
-//   }
-// }
-
-// .archive__item-excerpt {
-//   margin-top: 0;
-//   font-size: $type-size-6;
-
-//   & + p {
-//     text-indent: 0;
-//   }
-// }
-
-// .archive__item-teaser {
-//   border-radius: $border-radius;
-//   overflow: hidden;
-//   img {
-//     width: 100%;
-//   }
-// }
-
-// .archive__item:hover {
-//   .archive__item-teaser {
-//     box-shadow: 0 0 10px rgba(#000, 0.25);
-//   }
-
-//   .archive__item-title {
-//     text-decoration: underline;
-//   }
-// }
 .page__content {
   .archive__item-title {
     margin-top: 1em;
@@ -93,10 +58,7 @@
     display: inline;
     background-size: 0% 100%;
     background-repeat: no-repeat;
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.12),
-      rgba(0, 0, 0, 0.12)
-    );
+    background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12));
     transition: background-size 0.25s ease;
   }
 }
@@ -119,28 +81,49 @@
   }
 }
 
-/* Card hover effect */
+/* ==============================
+   Card hover + clickable link
+============================== */
+
 .archive__item {
+  position: relative;
+  margin: 1rem 0;              /* spacing between boxes */
+  padding: 1rem 1.25rem;       /* inner spacing */
+  border-radius: 12px;         /* rounded corners */
+  background: #fff;            /* needed for shadow */
+  cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(#000, 0.15);
+
+    .archive__item-teaser {
+      box-shadow: 0 0 10px rgba(#000, 0.25);
+    }
+
+    .archive__item-title {
+      background-size: 100% 100%;
+      text-decoration: none;
+    }
+  }
 }
 
-.archive__item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(#000, 0.15);
-
-  .archive__item-teaser {
-    box-shadow: 0 0 10px rgba(#000, 0.25);
-  }
-
-  .archive__item-title {
-    /* activate highlight */
-    background-size: 100% 100%;
-    text-decoration: none;
-  }
+.archive__item-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  text-decoration: none;
+  color: inherit;
 }
 
+/* Keep buttons clickable */
+.archive__item-extras a {
+  position: relative;
+  z-index: 2;
+}
 
-/*
+/* ==========================================================================
    List view
    ========================================================================== */
 
@@ -162,8 +145,7 @@
   }
 }
 
-
-/*
+/* ==========================================================================
    Grid view
    ========================================================================== */
 
@@ -191,8 +173,8 @@
   }
 
   @include breakpoint($medium) {
-    margin-left: 0; /* reset before mixin does its thing*/
-    margin-right: 0; /* reset before mixin does its thing*/
+    margin-left: 0; /* reset before mixin does its thing */
+    margin-right: 0; /* reset before mixin does its thing */
     @include gallery(2.5 of 10);
 
     .archive__item-teaser {
@@ -204,25 +186,9 @@
       font-size: $type-size-6;
     }
   }
-  .archive__item {
-    position: relative;
-  }
-
-  .archive__item-link {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-  }
-
-  /* Keep buttons clickable */
-  .archive__item-extras a {
-    position: relative;
-    z-index: 2;
-  }
 }
 
-
-/*
+/* ==========================================================================
    Features
    ========================================================================== */
 
@@ -246,7 +212,9 @@
     }
   }
 
-  &--left {
+  &--left,
+  &--right,
+  &--center {
     @include full();
     font-size: 1.25rem;
 
@@ -268,13 +236,6 @@
   }
 
   &--right {
-    @include full();
-    font-size: 1.25rem;
-
-    .archive__item-teaser {
-      margin-bottom: 2em;
-    }
-
     @include breakpoint($small) {
       text-align: right;
 
@@ -291,13 +252,6 @@
   }
 
   &--center {
-    @include full();
-    font-size: 1.25rem;
-
-    .archive__item-teaser {
-      margin-bottom: 2em;
-    }
-
     @include breakpoint($small) {
       text-align: center;
 
