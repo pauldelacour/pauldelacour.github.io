@@ -16,6 +16,23 @@ pdf: "/files/papers/smm_paul_delacour.pdf"
 ---
 
 <!-- [Download paper here](https://arxiv.org/abs/2501.01840) -->
+<p class="archive__item-extras">
+  {% if page.arxiv %}
+    <a href="{{ post.arxiv }}" class="btn btn--small" target="_blank" rel="noopener noreferrer">
+      <i class="fas fa-file-alt"></i> arXiv
+    </a>
+  {% endif %}
+  {% if page.publication_url %}
+    <a href="{{ post.publication_url }}" class="btn btn--small" target="_blank" rel="noopener noreferrer">
+      <i class="fas fa-link"></i> Publication
+    </a>
+  {% endif %}
+  {% if page.pdf %}
+    <a href="{{ post.pdf }}" class="btn btn--small" target="_blank" rel="noopener noreferrer">
+      <i class="fas fa-file-pdf"></i> PDF
+    </a>
+  {% endif %}
+</p>
 <div class="publications-list">
     <div class="archive__item">
       <!-- Link Buttons -->
