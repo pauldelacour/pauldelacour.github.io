@@ -46,9 +46,6 @@ Publications
   {% for post in site.publications reversed %}
     <div class="archive__item">
       <a class="archive__item-link" href="{{ post.url }}">
-      test 1
-      </a>
-      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }} 2</a>
       <h2 class="archive__item-title" itemprop="headline">
         <span class="bullet">&#8226;</span> {{ post.title }}
       </h2>
@@ -56,6 +53,7 @@ Publications
       <p class="archive__item-meta">
         {{ post.authors }} — {{ post.venue }}{% if post.year %}, {{ post.year }}{% endif %}
       </p>
+      </a>
       <!-- Link Buttons -->
       <p class="archive__item-extras">
         {% if post.arxiv %}
