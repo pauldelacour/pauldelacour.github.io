@@ -87,7 +87,8 @@
 
 .archive__item {
   position: relative;
-  margin: 1rem 0;              /* spacing between boxes */
+  // margin: 1rem 0;              /* spacing between boxes */
+  margin: 0.5rem 0;
   padding: 1rem 1.25rem;       /* inner spacing */
   border-radius: 12px;         /* rounded corners */
   background: #fff;            /* needed for shadow */
