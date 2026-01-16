@@ -33,31 +33,6 @@ pdf: "/files/papers/smm_paul_delacour.pdf"
     </a>
   {% endif %}
 </p>
-<div class="publications-list">
-    <div class="archive__item">
-      <!-- Link Buttons -->
-      <h2 class="archive__item-title" itemprop="headline">
-        Download here
-      </h2>
-      <p class="archive__item-extras">
-        {% if page.arxiv %}
-          <a href="{{ post.arxiv }}" class="btn btn--small" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-file-alt"></i> arXiv
-          </a>
-        {% endif %}
-        {% if page.publication_url %}
-          <a href="{{ post.publication_url }}" class="btn btn--small" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-link"></i> Publication
-          </a>
-        {% endif %}
-        {% if page.pdf %}
-          <a href="{{ post.pdf }}" class="btn btn--small" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-file-pdf"></i> PDF
-          </a>
-        {% endif %}
-      </p>
-    </div>
-</div>
 
 We introduce the spiked mixture model (SMM) to address the problem of estimating a set of signals from many randomly scaled and noisy observations. Subsequently, we design a novel expectation-maximization (EM) algorithm to recover all parameters of the SMM. Numerical experiments show that in low signal-to-noise ratio regimes, and for data types where the SMM is relevant, SMM surpasses the more traditional Gaussian mixture model (GMM) in terms of signal recovery performance.
 
