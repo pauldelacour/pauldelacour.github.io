@@ -65,6 +65,11 @@ Publications
             <i class="fas fa-link"></i> Publication
           </a>
         {% endif %}
+        {% if post.code %}
+            <a href="{{ post.code }}" class="btn btn--small" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-fw fa-github"></i> code
+            </a>
+          {% endif %}
         {% if post.pdf %}
           <a href="{{ post.pdf }}" class="btn btn--small" target="_blank" rel="noopener noreferrer">
             <i class="fas fa-file-pdf"></i> PDF
