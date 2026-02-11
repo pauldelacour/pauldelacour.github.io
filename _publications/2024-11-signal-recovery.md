@@ -6,7 +6,7 @@ excerpt: 'We introduce the spiked mixture model (SMM) to address the problem of 
 date: 2025-01-03
 #paperurl: 'https://arxiv.org/abs/2501.01840'
 venue: "IEEE Transactions on Signal Processing"
-authors : "Delacour, Wahls, Spraggins, Migas, Van de Plas"
+authors : "<strong>Delacour</strong>, Wahls, Spraggins, Migas, Van de Plas"
 year : 2025
 arxiv: "https://arxiv.org/abs/2501.01840"
 publication_url : "https://ieeexplore.ieee.org/document/11103744"
