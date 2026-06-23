@@ -8,11 +8,12 @@ redirect_from:
   - /about.html
 ---
 
-<p align="center">
-  <img src="images/visuals/solid_phase.png" alt="Solid phase" width="130" style="display:inline-block; margin: 0 12px;
-  margin-top: -20px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
-  <img src="images/visuals/liquid_phase.png" alt="Liquid phase" width="130" style="display:inline-block; margin: 0 12px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
-</p>
+<div style="text-align: center; margin-bottom: 20px;">
+  <div style="display:inline-block; background: rgba(0,0,0,0.04); border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.12); padding: 16px 24px;">
+    <img src="images/visuals/solid_phase.png" alt="Solid phase" width="130" style="display:inline-block; margin: 0 12px; margin-top: -20px;">
+    <img src="images/visuals/liquid_phase.png" alt="Liquid phase" width="130" style="display:inline-block; margin: 0 12px;">
+  </div>
+</div>
 
 About Me
 =====
