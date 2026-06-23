@@ -9,7 +9,8 @@ redirect_from:
 ---
 
 <p align="center">
-  <img src="images/visuals/solid_phase.png" alt="Solid phase" width="130" style="display:inline-block; margin: 0 12px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+  <img src="images/visuals/solid_phase.png" alt="Solid phase" width="130" style="display:inline-block; margin: 0 12px;
+  margin-top: -20px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
   <img src="images/visuals/liquid_phase.png" alt="Liquid phase" width="130" style="display:inline-block; margin: 0 12px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
 </p>
 
