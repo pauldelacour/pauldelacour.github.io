@@ -8,6 +8,10 @@ redirect_from:
   - /about.html
 ---
 
+<p>
+  <img src="images/visuals/solid_phase.png" alt="Solid phase" width="150" style="display:inline-block; margin-right:8px;">
+  <img src="images/visuals/liquid_phase.png" alt="Liquid phase" width="150" style="display:inline-block;">
+</p>
 
 About Me
 =====
