@@ -17,8 +17,9 @@ redirect_from:
 
 About Me
 =====
-I started my PhD advised by [Raf Van de Plas](http://vandeplaslab.tudelft.nl) in November 2022, working on high-dimensional statistics, random matrix theory, and deep generative modeling, with applications to imaging mass spectrometry and hyperspectral imaging.
-My research interest lies in using mathematics to understand and improve machine learning on high-dimensional real-world signals.
+I started my PhD in November 2022, advised by [Raf Van de Plas](http://vandeplaslab.tudelft.nl). 
+My work sits at the intersection of machine learning, high-dimensional statistics, and random matrix theory.
+I'm interested in using mathematics to understand — and improve — how machine learning behaves on high-dimensional, real-world signals.
 
 Education
 ======
