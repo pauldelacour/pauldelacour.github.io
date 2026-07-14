@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2026-07-phase-transition
 excerpt: |
     This work provides sharp information-theoretic bounds on the parameters needed to detect one or more spikes from extreme eigenvalues of the SMM covariance matrix, and these guarantees could potentially impact any application of the SMM.
-date: 2027-07-14
+date: 2026-07-14
 #paperurl: 'https://arxiv.org/abs/2501.01840'
 venue: "Preprint"
 authors : "<strong>Delacour</strong>, Van de Plas"
