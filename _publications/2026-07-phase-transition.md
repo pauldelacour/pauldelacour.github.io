@@ -47,7 +47,7 @@ This work provides sharp information-theoretic bounds on the parameters needed t
 <table style="width: 100%; border-collapse: collapse;">
   <tr>
     <td colspan="2" style="padding: 15px; text-align: center;">
-      <div style="width: 80%;">
+      <div style="width: 80%; margin : 0 auto;">
         <img src="{{ site.url }}/images/Phase_transition/SMM-empirical-eigval.png" style="width: 100%; height: auto;">
         <div style="margin-bottom: 5px; font-style: italic; font-weight: bold;">
           (a) Example of two eigenvalues escaping the bulk of the Marˇchenko–Pastur (MP) distribution. In this example dataset with \(n = 2000\), \(d = 1000\), \(K = \), and \(\gamma = 0.5\), the spike signal strengths were set to \( \beta_1 = 4\) and \(\beta_2 = 5\), the spike probabilities to \(\pi_1 = 0.4\) and \( \pi_2 = 0.6\),
@@ -58,7 +58,7 @@ This work provides sharp information-theoretic bounds on the parameters needed t
   </tr>
   <tr>
     <td colspan="2" style="padding: 15px; text-align: center;">
-      <div style="width: 100%;">
+      <div style="width: 100%; margin: 0 auto;">
         <img src="{{ site.url }}/images/Phase_transition/SMM-parameter-change.png" style="width: 100%; height: auto;">
         <div style="margin-bottom: 5px; font-style: italic; font-weight: bold;">
           (b) Effect of changing one of the hyperparameters. We show how varying a single hyperparameter, while keeping all others the same as in panel (a) impact the two largest eigenvalues. We explore varying the signal strength of the first spike, \(\beta_1\) (top-left), the signal strength of the second spike, \(\beta_2\) (top-right), the correlation between the spikes, \(\theta\) (bottom-left), and the spike probabilities, \(\pi_1\) and \(\pi_2\) (bottom-right).
