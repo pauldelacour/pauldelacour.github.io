@@ -3,7 +3,7 @@ title: "Signal analysis"
 collection: teaching
 type: "Bachelor course"
 permalink: /teaching/_teaching/2022-winter-teaching-bachelor-course
-venue: "Tu Delft"
+venue: "TU Delft"
 date: 2022-01-01
 ---
 
