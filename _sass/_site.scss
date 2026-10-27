@@ -173,4 +173,17 @@ p { margin:0 0 1.05em; }
 .author-sidebar__links .author-contact { display:inline-flex; align-items:center; gap:9px; line-height:1.45; }
 .author-sidebar__links .author-contact svg { display:block; flex:none; width:16px; height:16px; stroke:currentColor; }
 .paper-section--extra > p:first-child { margin-top:0; }
-@media(max-width:740px) { .author-sidebar__links .author-contact { gap:5px; } .author-sidebar__links .author-contact svg { width:15px; height:15px; } }
+@media(max-width:740px) { 
+  .author-sidebar__links 
+  .author-contact { gap:5px; } 
+  .author-sidebar__links 
+  .author-contact svg { width:15px; height:15px; } 
+}
+
+/* More balanced desktop margins */
+@media (min-width: 1051px) {
+  .header-inner,
+  .site-shell {
+    max-width: 1380px;
+  }
+}
