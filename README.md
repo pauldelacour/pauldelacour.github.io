@@ -18,12 +18,6 @@ The main content is organized as follows:
 - **Teaching:** edit `_data/teaching.yml`.
 - **Homepage and design:** edit `index.md` and `_sass/_site.scss`.
 
-## Running locally
-
-With Ruby and Bundler installed, run `bundle install` followed by `bundle exec jekyll serve --livereload`.
-
-The website will be available at `http://localhost:4000/`. Updates pushed to `main` are built and deployed through GitHub Actions.
-
 ## Contact
 
 You can reach me at [delacourpaullouis@gmail.com](mailto:delacourpaullouis@gmail.com).
