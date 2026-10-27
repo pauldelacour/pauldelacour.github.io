@@ -1,1 +1,0 @@
-Original website images must be imported before publication. Run scripts/import_old_assets.sh on a clone of the old repository. Image file names are intentionally preserved to keep the existing paper figures and homepage visuals. This README may remain.
