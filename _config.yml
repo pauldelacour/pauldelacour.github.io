@@ -1,8 +1,8 @@
 title: "Paul-Louis Delacour"
 description: "Machine learning, high-dimensional statistics, and random matrix theory"
 url: "https://pauldelacour.github.io"
-baseurl: ""
-repository: "pauldelacour/pauldelacour.github.io"
+baseurl: "/pauldelacour2.github.io"
+repository: "pauldelacour/pauldelacour2.github.io"
 lang: en
 markdown: kramdown
 permalink: pretty
