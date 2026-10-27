@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<article class="talk-detail paper-detail">
+  <a class="back-link" href="{{ '/talks/' | relative_url }}">← All talks</a>
+  <header class="paper-detail__header">
+    <h1>{{ page.title }}</h1>
+    <p class="paper-venue">
+      {% if page.date %}{{ page.date | date: '%-d %B %Y' }}{% endif %}
+      {% if page.venue %} · {{ page.venue }}{% endif %}
+      {% if page.location %}<span class="talk-location"> · {{ page.location }}</span>{% endif %}
+    </p>
+    <div class="resource-links">
+      {% if page.slides_url %}<a class="resource-button resource-button--pdf" href="{{ page.slides_url | relative_url }}" target="_blank" rel="noopener noreferrer">Slides ↗</a>{% endif %}
+      {% if page.video_url %}<a class="resource-button" href="{{ page.video_url }}" target="_blank" rel="noopener noreferrer">Recording ↗</a>{% endif %}
+    </div>
+  </header>
+  <section class="paper-section talk-detail__body">{{ content }}</section>
+  {% if page.youtube_id %}
+    <section class="paper-section">
+      <h2>Watch the recording</h2>
+      <div class="video-embed">
+        <iframe src="https://www.youtube-nocookie.com/embed/{{ page.youtube_id | escape }}" title="{{ page.title | escape }} recording" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+  {% endif %}
+</article>

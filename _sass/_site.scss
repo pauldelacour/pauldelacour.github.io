@@ -168,3 +168,9 @@ p { margin:0 0 1.05em; }
   .paper-figures .figure-wide { grid-column:auto; }
 }
 @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; } }
+
+/* Inline author sidebar icons; no external icon font. */
+.author-sidebar__links .author-contact { display:inline-flex; align-items:center; gap:9px; line-height:1.45; }
+.author-sidebar__links .author-contact svg { display:block; flex:none; width:16px; height:16px; stroke:currentColor; }
+.paper-section--extra > p:first-child { margin-top:0; }
+@media(max-width:740px) { .author-sidebar__links .author-contact { gap:5px; } .author-sidebar__links .author-contact svg { width:15px; height:15px; } }

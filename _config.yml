@@ -1,8 +1,8 @@
 title: "Paul-Louis Delacour"
 description: "Machine learning, high-dimensional statistics, and random matrix theory"
 url: "https://pauldelacour.github.io"
-baseurl: "/pauldelacour2.github.io"
-repository: "pauldelacour/pauldelacour2.github.io"
+baseurl: "/pauldelacour2.github.io"  # Temporary test repository; change to "" for final website
+repository: "pauldelacour/pauldelacour2.github.io"  # Change when switching back to original
 lang: en
 markdown: kramdown
 permalink: pretty
@@ -12,6 +12,19 @@ github_username: "pauldelacour"
 location: "TU Delft"
 avatar: "/images/photo_cv.jpg"
 
+# Jekyll ignores underscore-prefixed page folders unless explicitly included.
+include:
+  - _pages
+
+collections:
+  talks:
+    output: true
+    permalink: /talks/:name/
+  # Optional enrichments of Jekyll-Scholar's automatically generated detail pages.
+  # These documents are read by the paper layout, NOT published as separate pages.
+  paper_content:
+    output: false
+
 plugins:
   - jekyll/scholar
 
@@ -19,8 +32,9 @@ scholar:
   source: "./_bibliography"
   bibliography: "papers.bib"
   bibliography_template: bib
-  details_layout: paper
+  details_layout: paper.html
   details_dir: publication
+  details_permalink: "/publication/:key/"
   details_link: Details
   query: "@*"
   sort_by: year
@@ -31,14 +45,15 @@ scholar:
   replace_strings: true
   join_strings: true
   bibtex_filters: [latex]
-include:
-  - _pages
+
 exclude:
   - README.md
   - DEPLOY.md
+  - MIGRATION.md
   - Gemfile
   - Gemfile.lock
   - scripts/
+  - examples/
   - vendor/
   - .github/
   - .gitignore
