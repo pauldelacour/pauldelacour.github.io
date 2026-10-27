@@ -35,7 +35,7 @@ scholar:
   details_layout: paper.html
   details_dir: publication
   details_permalink: "/publication/:key/"
-  details_link: Details
+  details_link: false
   query: "@*"
   sort_by: year
   order: descending
