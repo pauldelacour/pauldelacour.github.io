@@ -26,7 +26,7 @@ title: Home
   <section class="home-section" aria-labelledby="about-heading">
     <h2 id="about-heading">About my research</h2>
     <div class="home-about__text">
-      <p>I started my PhD in November 2022, advised by <a href="http://vandeplaslab.tudelft.nl">Raf Van de Plas</a>.</p>
+      <p>I started my PhD in November 2022, advised by <strong>Raf Van de Plas</strong>.</p>
       <p>My work sits at the intersection of machine learning, high-dimensional statistics, and random matrix theory.</p>
       <p>My research seeks to understand when latent structure can be recovered from complex and noisy data, how sharp transitions separate learnable from non-learnable regimes, and how these theoretical insights can guide the design of effective inference and generative-learning methods.</p>
     </div>
