@@ -31,7 +31,8 @@ scholar:
   replace_strings: true
   join_strings: true
   bibtex_filters: [latex]
-
+include:
+  - _pages
 exclude:
   - README.md
   - DEPLOY.md
