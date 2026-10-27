@@ -1,0 +1,44 @@
+title: "Paul-Louis Delacour"
+description: "Machine learning, high-dimensional statistics, and random matrix theory"
+url: "https://pauldelacour.github.io"
+baseurl: ""
+repository: "pauldelacour/pauldelacour.github.io"
+lang: en
+markdown: kramdown
+permalink: pretty
+
+email: "delacourpaullouis@gmail.com"
+github_username: "pauldelacour"
+location: "TU Delft"
+avatar: "/images/photo_cv.jpg"
+
+plugins:
+  - jekyll/scholar
+
+scholar:
+  source: "./_bibliography"
+  bibliography: "papers.bib"
+  bibliography_template: bib
+  details_layout: paper
+  details_dir: publication
+  details_link: Details
+  query: "@*"
+  sort_by: year
+  order: descending
+  group_by: none
+  style: apa
+  locale: en
+  replace_strings: true
+  join_strings: true
+  bibtex_filters: [latex]
+
+exclude:
+  - README.md
+  - DEPLOY.md
+  - Gemfile
+  - Gemfile.lock
+  - scripts/
+  - vendor/
+  - .github/
+  - .gitignore
+  - LICENSE

@@ -1,0 +1,11 @@
+---
+---
+<article class="research-card research-card--paper">
+  <div class="paper-topline">
+    <h3 class="paper-title"><a href="{{ '/publication/' | append: key | append: '.html' | relative_url }}">{{ entry.title | escape }}</a></h3>
+    <span class="paper-year">{{ entry.year }}</span>
+  </div>
+  {% if entry.author %}<p class="paper-authors">{{ entry.author | format_paper_authors }}</p>{% endif %}
+  <p class="paper-venue">{% if entry.journal %}{{ entry.journal | escape }}{% elsif entry.booktitle %}{{ entry.booktitle | escape }}{% elsif entry.venue %}{{ entry.venue | escape }}{% else %}Preprint{% endif %}</p>
+  {% include paper_links.html entry=entry %}
+</article>

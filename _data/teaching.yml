@@ -1,0 +1,11 @@
+- title: "Signal Analysis & Learning"
+  year: 2025
+  level: "Master course"
+  institution: "TU Delft"
+  description: "Introduction to signal analysis and machine learning, including the mathematical foundations and guarantees of principal component analysis."
+
+- title: "Signal analysis"
+  year: 2022
+  level: "Bachelor course"
+  institution: "TU Delft"
+  description: "Filtering, detection, and analysis of deterministic and stochastic signals in linear time-invariant systems, with an emphasis on discrete-time techniques."

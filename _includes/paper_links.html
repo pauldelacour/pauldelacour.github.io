@@ -1,0 +1,9 @@
+{% assign e = include.entry %}
+<div class="resource-links" aria-label="Publication resources">
+  {% if e.arxiv %}<a class="resource-button resource-button--arxiv" href="{{ e.arxiv }}" target="_blank" rel="noopener noreferrer">arXiv ↗</a>{% endif %}
+  {% if e.biorxiv %}<a class="resource-button resource-button--biorxiv" href="{{ e.biorxiv }}" target="_blank" rel="noopener noreferrer">bioRxiv ↗</a>{% endif %}
+  {% if e.publication_url %}<a class="resource-button resource-button--publication" href="{{ e.publication_url }}" target="_blank" rel="noopener noreferrer">Publication ↗</a>{% elsif e.doi %}<a class="resource-button resource-button--publication" href="https://doi.org/{{ e.doi }}" target="_blank" rel="noopener noreferrer">Publication ↗</a>{% endif %}
+  {% if e.pdf %}{% assign pdf_start = e.pdf | slice: 0, 4 %}<a class="resource-button resource-button--pdf" href="{% if pdf_start == 'http' %}{{ e.pdf }}{% else %}{{ e.pdf | relative_url }}{% endif %}" target="_blank" rel="noopener noreferrer">PDF ↗</a>{% endif %}
+  {% if e.code %}<a class="resource-button resource-button--code" href="{{ e.code }}" target="_blank" rel="noopener noreferrer">Code ↗</a>{% endif %}
+  {% if e.poster %}<a class="resource-button" href="{{ e.poster | relative_url }}" target="_blank" rel="noopener noreferrer">Poster ↗</a>{% endif %}
+</div>

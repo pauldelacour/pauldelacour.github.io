@@ -1,0 +1,35 @@
+---
+layout: default
+---
+{% assign e = page.entry %}
+{% assign detail = site.data.paper_details[e.key] %}
+<article class="paper-detail">
+  <a class="back-link" href="{{ '/publications/' | relative_url }}">← All publications</a>
+  <header class="paper-detail__header">
+    <h1>{{ e.title | escape }}</h1>
+    <p class="paper-authors">{{ e.author | format_paper_authors }}</p>
+    <p class="paper-venue">{% if e.journal %}{{ e.journal | escape }}{% elsif e.venue %}{{ e.venue | escape }}{% else %}Preprint{% endif %} · {{ e.year }}</p>
+    {% include paper_links.html entry=e %}
+  </header>
+  {% if detail.description %}
+    <section class="paper-section"><h2>Overview</h2>{{ detail.description | markdownify }}</section>
+  {% elsif e.abstract %}
+    <section class="paper-section"><h2>Abstract</h2><p>{{ e.abstract | escape }}</p></section>
+  {% endif %}
+  {% if detail.video %}
+    <section class="paper-section"><h2>{{ detail.video_title | default: 'Illustration' }}</h2>
+    <video class="research-video" muted autoplay loop controls playsinline preload="metadata"><source src="{{ detail.video | relative_url }}" type="video/mp4">Your browser does not support the video tag.</video></section>
+  {% endif %}
+  {% if detail.figures %}
+    <section class="paper-section"><h2>{{ detail.figures_title | default: 'Figures' }}</h2>
+    <div class="paper-figures {% if detail.figures_layout == 'grid' %}paper-figures--grid{% endif %}">
+      {% for figure in detail.figures %}
+        <figure {% if figure.wide %}class="figure-wide"{% endif %}>
+          <img src="{{ figure.src | relative_url }}" alt="{{ figure.alt | default: figure.caption | strip_html | escape }}" loading="lazy">
+          {% if figure.caption %}<figcaption>{{ figure.caption }}</figcaption>{% endif %}
+        </figure>
+      {% endfor %}
+    </div></section>
+  {% endif %}
+  {% if e.poster %}<section class="paper-section"><h2>Poster</h2><p>Conference poster available with the publication links above.</p></section>{% endif %}
+</article>

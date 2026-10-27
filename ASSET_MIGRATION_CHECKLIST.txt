@@ -1,0 +1,6 @@
+These expected binary assets will be copied from the old site by scripts/import_old_assets.sh:
+/images/visuals/solid_phase.png
+/images/visuals/liquid_phase.png
+/images/photo_cv.jpg
+/images/SMM/synthetic_data_SMM.mp4
+/files/papers/smm_paul_delacour.pdf
