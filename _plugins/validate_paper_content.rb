@@ -11,7 +11,7 @@ module ValidatePaperContent
       return unless collection
       path = File.join(site.source, '_bibliography', 'papers.bib')
       bibliography = BibTeX.open(path)
-      valid_keys = bibliography.entries.map { |entry| entry.key.to_s }.to_set
+      valid_keys = bibliography.entries.keys.map(&:to_s).to_set
       seen = Set.new
       collection.docs.each do |doc|
         key = doc.data.fetch('bibkey', '').to_s.strip
