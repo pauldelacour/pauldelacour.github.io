@@ -1,6 +1,6 @@
 ---
 layout: talk
-title: "DCSC colloquium"
+title: "Random matrix DCSC colloquium"
 date: 2026-09-01
 venue: "TU Delft / Delft Center for Systems and Control (DCSC)"
 location: "Delft, Netherlands"
