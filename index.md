@@ -35,7 +35,7 @@ title: Home
   <section class="home-section" aria-labelledby="education-heading">
     <h2 id="education-heading">Education</h2>
     <div class="home-education">
-      <div class="home-education__item"><div><h3>PhD in Machine Learning</h3><p>TU Delft</p></div><span>2022–present</span></div>
+      <div class="home-education__item"><div><h3>PhD with a focus on Machine Learning</h3><p>TU Delft</p></div><span>2022–present</span></div>
       <div class="home-education__item"><div><h3>MSc in Data Science</h3><p>ETH Zürich</p></div><span>2019–2022</span></div>
       <div class="home-education__item"><div><h3>BSc in Communication Systems</h3><p>EPFL</p></div><span>2016–2019</span></div>
     </div>
