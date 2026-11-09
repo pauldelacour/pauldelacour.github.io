@@ -143,8 +143,22 @@ p { margin:0 0 1.05em; }
   .avatar-link { width:60px; height:60px; flex-shrink:0; margin:0; border:2px solid white; }
   .avatar-link img { width:100%; height:100%; aspect-ratio:1; object-position:center 28%; }
   .author-sidebar__details { display:none; } /* name already in mobile header */
-  .author-sidebar__links { flex-direction:row; justify-content:flex-end; flex-wrap:wrap; gap:8px 12px; font-size:.78rem; }
-  .author-location { display:none; }
+  .author-sidebar__links {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: end;
+    align-items: center;
+    column-gap: 14px;
+    row-gap: 10px;
+    font-size: .78rem;
+  }
+  .author-sidebar__links .author-contact {
+    gap: 5px;
+    white-space: nowrap;
+  }
+  .author-location {
+    display: inline-flex;
+  }
   .home-hero { border-radius:14px; padding:22px 21px; gap:15px; }
   .home-hero__eyebrow { font-size:.72rem; margin-bottom:0; }
   .home-hero__eyebrow span+span::before { margin:0 7px; }
